@@ -1,0 +1,58 @@
+command /party:
+    permission: p.general
+    permission message: you should have perms for this...
+    description: Info about the party plugin.
+    trigger:
+        if arg-1 is not on or off:
+            send "&3Choose on or off"
+            cancel the cooldown
+            stop
+        send "&3Setting changed"
+
+command /party invite:
+    permission: p.general
+    permission message: you should have perms for this...
+    description: Invite people into your party.
+    cooldown: 5 seconds
+    trigger:
+        if arg-1 is not on or off:
+            send "&3Choose on or off"
+            cancel the cooldown
+            stop
+        send "&3Setting changed"
+
+command /party bw:
+    permission: p.general
+    permission message: you should have perms for this...
+    description: Play BedWars with your party.
+    cooldown: 10 seconds
+    trigger:
+        if arg-1 is not on or off:
+            send "&3Choose on or off"
+            cancel the cooldown
+            stop
+        send "&3Setting changed"
+
+command /party bb:
+    permission: p.general
+    permission message: you should have perms for this...
+    description: Play BuildBattle with your party.
+    cooldown: 10 seconds
+    trigger:
+        if arg-1 is not on or off:
+            send "&3Choose on or off"
+            cancel the cooldown
+            stop
+        send "&3Setting changed"
+
+command /party mm: 
+    permission: p.general
+    permission message: you should have perms for this...
+    description: Play MurderMystery with your party.
+    cooldown: 10 seconds
+    trigger:
+        if arg-1 is not on or off:
+            send "&3Choose on or off"
+            cancel the cooldown
+            stop
+        send "&3Setting changed"
