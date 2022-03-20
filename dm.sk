@@ -1,0 +1,28 @@
+command /dm <player=%player%> <message>:
+    permission: dm.general
+    permission message: you should have perms for this...
+    description: Send a direct message to any player.
+    cooldown: 10 seconds
+    cooldown message: Calm down with the commands! Try again in %remaining time%.
+    cooldown bypass: dm.fast
+    trigger:
+        if arg-1 is not set:
+            send "&3You can't send stuff to space"
+            cancel the cooldown
+            stop
+        send arg-2 to arg-1
+        send "&3Message sent"
+
+command /dm mute <setting>:
+    permission: dm.mute
+    permission message: you don't have perms for this...
+    description: Mute messages.
+    cooldown: 10 seconds
+    cooldown message: Calm down with the commands! Try again in %remaining time%.
+    cooldown bypass: dm.fast
+    trigger:
+        if arg-1 is not on or off:
+            send "&3Choose on or off"
+            cancel the cooldown
+            stop
+        send "&3Setting changed"
