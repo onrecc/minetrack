@@ -1,0 +1,22 @@
+command /party:
+    permission: p.general
+    permission message: you should have perms for this...
+    description: Info about the party plugin.
+    cooldown: 10 seconds
+    trigger:
+        if arg-1 is not on or off:
+            send "&3Choose on or off"
+            cancel the cooldown
+            stop
+        send "&3Setting changed"
+
+command /party invite:
+
+
+command /party bw:
+
+
+command /party bb:
+
+
+command /party mm:
